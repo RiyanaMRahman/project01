@@ -26,7 +26,7 @@ def save_diary():
         'content':content_receive
     }
     db.diary.insert_one(doc)
-    return jsonify({'msg':'Upload complete!'})
+    return jsonify({'msg':'Upload complete'})
 
 if __name__ == '__main__':
     app.run('0.0.0.0', port=5000, debug=True)
